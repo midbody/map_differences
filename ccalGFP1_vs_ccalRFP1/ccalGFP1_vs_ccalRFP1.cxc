@@ -1,0 +1,18 @@
+close session
+set bgColor white
+windowsize 1000 1000
+open /Users/nori/Dropbox/StayRed/PDB_files/1ema_posed.pdb
+zoom 1.2
+turn y -30
+color #1 gray
+display #1:65-67
+~ribbon #1:64-68
+display #1:64@N,CA,C,O
+display #1:68@N,CA,C,O
+transparency #1 80 ribbons
+color #1:8,9,10,12,15,26,28,38,39,41,43,45,50,62,63,73,92,98,100,104,118,122,138,142,143,151,158,171,181,184,186,190,192,208,222,224 darkseagreen
+display #1:8,9,10,12,15,26,28,38,39,41,43,45,50,62,63,73,92,98,100,104,118,122,138,142,143,151,158,171,181,184,186,190,192,208,222,224
+transparency #1:8,9,10,12,15,26,28,38,39,41,43,45,50,62,63,73,92,98,100,104,118,122,138,142,143,151,158,171,181,184,186,190,192,208,222,224 20 ribbons
+color #1:64-68 lightgray
+color #1 byhet
+save /Users/nori/Dropbox/BBSRC_EvoFPs/FP_phylogenetics/map_differences/ccalGFP1_vs_ccalRFP1/ccalGFP1_vs_ccalRFP1.png supersample 3

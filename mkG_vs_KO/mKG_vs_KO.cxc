@@ -1,0 +1,19 @@
+close session
+set bgColor white
+windowsize 1000 1000
+open /Users/nori/Dropbox/StayRed/PDB_files/1ema_posed.pdb
+zoom 1.2
+turn y -30
+color #1 gray
+display #1:65-67
+~ribbon #1:64-68
+display #1:64@N,CA,C,O
+display #1:68@N,CA,C,O
+transparency #1 80 ribbons
+color #1:1,15,17,29,36,49,56,63,65,70,99,105,107,118,120,126,136,141,152,153,164,168,187,194,197,198,200,232 palevioletred
+display #1:1,15,17,29,36,49,56,63,65,70,99,105,107,118,120,126,136,141,152,153,164,168,187,194,197,198,200,232
+transparency #1:1,15,17,29,36,49,56,63,65,70,99,105,107,118,120,126,136,141,152,153,164,168,187,194,197,198,200,232 20 ribbons
+color #1:64-68 lightgray
+color #1:66@N1,CA1,CB1,CG1,OG1,C1 palevioletred
+color #1 byhet
+save /Users/nori/Dropbox/BBSRC_EvoFPs/FP_phylogenetics/map_differences/mKG_vs_KO/mKG_vs_KO.png supersample 3
